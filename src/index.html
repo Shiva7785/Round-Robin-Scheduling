@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU Scheduling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1><u>Welcome to Our Operating System Project - Sem 3</u></h1>
+            <h1 class="about"><u><strong>Round Robin Scheduling</strong> </u></h1>
+            <h2>Shivanandreddy. 1RVU23CSE431<br>Kushal Rajpurohit. 1RVU23CSE231 <br>Vikranth Subramanyam. 1RVU23CSE538 <br></h2>
+            
+            <br><br>
+            <table id="inputTable">
+                <tr>
+                    <th>Process</th>
+                    <th>Arrival Time</th>
+                    <th>Burst/CPU Time</th>
+                    <th class="servtime">Service Time</th>
+                </tr>
+                <tr>
+                    <td>P0</td>
+                    <td><input class="initial arrivaltime" type="text" value="0" /></td>
+                    <td><input class="initial exectime" type="text" value="5" /></td>
+                    <td class="servtime"></td>
+                </tr>
+                <tr>
+                    <td>P1</td>
+                    <td><input class="initial arrivaltime" type="text" value="1" /></td>
+                    <td><input class="initial exectime" value="3" /></td>
+                    <td class="servtime"></td>
+                </tr>
+            </table>
+            <div>
+                <input id="minus" type="button" value="-" onclick="deleteRow();" />
+                <input type="button" value="+" onclick="addRow();" />
+            </div>
+            <br>
+            <p id="quantumParagraph">Quantum: 
+                <input style="width: 50px;" id="quantum" type="text" value="3" />
+            </p>
+            <input type="button" value="Go" onclick="draw();" />
+            <br/><br/>
+
+            <div id="fresh"></div>
+            <p class="zaz">
+                <u> Total Completion Time: <strong id="timer"></strong> seconds </u>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
