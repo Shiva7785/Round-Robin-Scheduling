@@ -17,8 +17,15 @@ A web-based simulation of the **Round Robin Scheduling** algorithm using **HTML,
 2. Enter process details and quantum time.
 3. Click "Start Simulation" to view the scheduling process.
 
-Round-Robin-Scheduling/ │── src/ # Source code directory │ │── index.html
-│ │── style.css
-│ └── script.js
-│ │── docs/ # Documentation │ │── Report.pdf
-│ └── Presentation.pptx │ │── README.md # Project documentation
+## 📂 Project Structure
+Round-Robin-Scheduling/
+│── src/             # Source code directory
+│   │── index.html      
+│   │── style.css       
+│   └── script.js       
+│
+│── docs/            # Documentation
+│   │── Report.pdf       
+│   └── Presentation.pptx 
+│
+│── README.md        # Project documentation
